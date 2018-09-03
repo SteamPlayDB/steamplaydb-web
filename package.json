@@ -4,7 +4,8 @@
   "description": "SteamPlayDB Front End",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src",
+    "test": "npm run -s lint"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,39 @@
   "bugs": {
     "url": "https://github.com/SteamPlayDB/steamplaydb-web/issues"
   },
-  "homepage": "https://github.com/SteamPlayDB/steamplaydb-web#readme"
+  "homepage": "https://github.com/SteamPlayDB/steamplaydb-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.5.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.5.0",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "dependencies": {
+    "preact": "^8.3.1",
+    "preact-router": "^2.6.1",
+    "promise-polyfill": "^8.1.0",
+    "prototypes": "^2.3.3"
+  }
 }
