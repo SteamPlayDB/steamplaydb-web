@@ -1,0 +1,24 @@
+{
+  "name": "steamplaydb-web",
+  "version": "0.0.1",
+  "description": "SteamPlayDB Front End",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteamPlayDB/steamplaydb-web.git"
+  },
+  "keywords": [
+    "SteamPlay",
+    "SteamPlayDB",
+    "Linux"
+  ],
+  "author": "SteamPlayDB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SteamPlayDB/steamplaydb-web/issues"
+  },
+  "homepage": "https://github.com/SteamPlayDB/steamplaydb-web#readme"
+}
