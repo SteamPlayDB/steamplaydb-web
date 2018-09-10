@@ -7,7 +7,8 @@
     "lint": "eslint src",
     "test": "npm run -s lint",
     "start": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
-    "build": "cross-env NODE_ENV=production webpack --progress"
+    "build": "cross-env NODE_ENV=production webpack --progress",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress"
   },
   "repository": {
     "type": "git",
