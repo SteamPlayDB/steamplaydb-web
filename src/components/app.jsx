@@ -1,12 +1,22 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
+import Sidebar from './sidebar';
+import './style';
+
 export default class App extends Component {
 	render() {
 		return (
-      <div id="app">
-        <h1>Hello, SteamPlayDB!</h1>
-			</div>
+      <div className="columns is-marginless">
+        <div className="column is-one-quarter sidebar is-marginless">
+          <Sidebar/>
+        </div>
+        <section className="main-content">
+          <div className="column is-two-thirds top">
+            <input className="input is-large" placeholder="Search Games" type="search"/>
+          </div>
+        </section>
+      </div>
 		);
 	}
 }
