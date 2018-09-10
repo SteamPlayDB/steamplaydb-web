@@ -2,6 +2,8 @@
 
 *Front End code base for SteamPlayDB.com*
 
+[![Build Status](https://travis-ci.org/SteamPlayDB/steamplaydb-web.svg?branch=master)](https://travis-ci.org/SteamPlayDB/steamplaydb-web)
+
 # How To Install
 1. Clone repo.
 2. `cd steamplaydb-web`
