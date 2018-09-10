@@ -2,7 +2,6 @@
 import webpack from 'webpack';
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import autoprefixer from 'autoprefixer';
 import path from 'path';
 const ENV = process.env.NODE_ENV || 'development';
 
