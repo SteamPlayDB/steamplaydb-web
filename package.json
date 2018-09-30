@@ -6,9 +6,8 @@
   "scripts": {
     "lint": "eslint src",
     "test": "npm run -s lint",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
-    "build": "cross-env NODE_ENV=production webpack --progress",
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress"
+    "start": "concurrently --kill-others \"webpack-dev-server --inline --hot\" \"webpack --watch\"",
+    "build": "cross-env NODE_ENV=production webpack --progress"
   },
   "repository": {
     "type": "git",
@@ -39,6 +38,7 @@
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.4.2",
     "babel-loader": "^8.0.2",
+    "concurrently": "^4.0.1",
     "core-js": "^2.5.7",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
