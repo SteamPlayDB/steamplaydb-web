@@ -2,7 +2,10 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import Sidebar from './sidebar';
+import SearchBar from './searchBar';
 import './style';
+
+import GameResults from './gameResults';
 
 export default class App extends Component {
 	render() {
@@ -13,7 +16,8 @@ export default class App extends Component {
         </div>
         <section className="main-content">
           <div className="column is-two-thirds top">
-            <input className="input is-large" placeholder="Search Games" type="search"/>
+            <SearchBar className="input is-large" placeholder="Search Games" />
+            <GameResults />
           </div>
         </section>
       </div>
