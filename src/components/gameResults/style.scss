@@ -1,4 +1,13 @@
+@import "../../style/variables";
+
 .gameResult {
+  &:hover {
+
+    .is-dark {
+      background-color: lighten($dark, 15%)
+    }
+  }
+
   .title {
     margin-top: .5rem;
   }
